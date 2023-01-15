@@ -1,7 +1,7 @@
-#the program detects cars using haar cascades for cars as the data set. 
-#detection of the cars is done through morphology. Morphology outlines the general shape of objects. If the shape of
-#certain region in the image resembles a car then it is highlighted. Error tends to occur because only shape is checked
-#and not the pixels inside the shape
+#the program detects cars using a car haar cascades and morphology
+#Morphology outlines the general shape of objects. If the shape of certain region in the image resembles a car then it is highlighted. 
+#Error tends to occur because only shape is checked and not the pixels inside the shape
+
 import cv2
 import numpy
 import glob
