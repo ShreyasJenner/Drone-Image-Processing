@@ -1,6 +1,7 @@
 #here the imported video file must be one in which cars have already been detected
-#the program allows user to select a single car and then tracks it for as long as it is on the video
-#since the program only tracks the pixels of a single view error occurs as it the program detects random objects when the selected car is no longer in the image
+#the program uses MIL Tracker to track a user selected object from the video
+#since the program only tracks the pixels of a single view error occurs when the selected object moves out of the video frame or the orientation of the object such that
+#the tracker is no longer able to recognize the object
 
 import cv2
 import numpy as np
