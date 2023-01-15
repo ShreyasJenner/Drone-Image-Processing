@@ -1,3 +1,10 @@
+#makes use of tinyyolov3 to detect cars
+#modified frames with detected cars are then written to a video using OpenCV.
+#video format is mp4 but can be changed based on user's need
+#modules used are:  imageai to use tinyolov3
+#glob to return to the program all the images in which cars are to be detected
+#OpenCV to read images and create videos
+
 from imageai.Detection import ObjectDetection
 import glob
 import cv2
