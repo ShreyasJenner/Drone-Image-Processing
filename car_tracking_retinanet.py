@@ -1,7 +1,12 @@
+#makes use of retinanet to detect cars in images and videos
+#modules used are imageai, glob and opencv
+#imageai is used to load the retinanet model to detect the cars
+#opencv to read and edit frames and images and to create a video with the edited frames
+#glob to return to the program all files(images) in which cars are to be detected
+
 from imageai.Detection import ObjectDetection
 import glob
 import cv2
-import numpy
 
 video = cv2.VideoWriter('results_retinanet(1).mp4',cv2.VideoWriter_fourcc(*'mp4v'),15, (1904,1071))
 detector = ObjectDetection()
